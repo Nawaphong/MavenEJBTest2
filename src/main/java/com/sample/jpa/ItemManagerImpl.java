@@ -36,7 +36,7 @@ public class ItemManagerImpl implements ItemLocal,ItemRemote {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Item> getItems() {
-		Query query = em.createQuery("SELECT u FROM Item u");
+		Query query = em.createQuery("SELECT i FROM Item i ORDER BY i.id");
 		List<Item> users = (List<Item>) query.getResultList();
 		return users;
 	}
