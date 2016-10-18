@@ -117,6 +117,9 @@ public class MyUtils {
 		if (targetLength < 0) {
 			return EMPTY_STRING;
 		}
+		if (targetLength < 0) {
+			return EMPTY_STRING;
+		}
 		StringBuilder sb = new StringBuilder(targetLength);
 		for (int i = 0; i < targetLength; i++) {
 			sb.append(SPACE_STRING);
