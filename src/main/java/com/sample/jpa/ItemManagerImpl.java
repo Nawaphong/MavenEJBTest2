@@ -59,12 +59,12 @@ public class ItemManagerImpl implements ItemLocal,ItemRemote {
 
 	@Override
 	public void removeItem(final Item item) {
-//		if(item == null){
-//			System.out.println(item.getName());
-//		}
-//		if("1".equals(1)){
-//			System.out.println("1");
-//		}
+		if(item == null){
+			System.out.println(item.getName());
+		}
+		if("1".equals(1)){
+			System.out.println("1");
+		}
 		Item itemToBeRemoved = em.getReference(Item.class, item.getId());
 	    em.remove(itemToBeRemoved);
 	}
