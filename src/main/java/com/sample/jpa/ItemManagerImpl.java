@@ -20,6 +20,7 @@ import com.sample.entity.User;
 @Remote(ItemRemote.class)
 public class ItemManagerImpl implements ItemLocal,ItemRemote {
 	
+	
 	@EJB
 	private UserLocal userService;
 	
